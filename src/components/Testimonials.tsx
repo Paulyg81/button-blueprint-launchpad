@@ -1,4 +1,5 @@
 
+
 const Testimonials = () => {
   const testimonialImages = [
     {
@@ -30,16 +31,16 @@ const Testimonials = () => {
           What Students Are Saying
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {testimonialImages.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <img 
                 src={testimonial.src} 
                 alt={testimonial.alt} 
-                className="w-full rounded-lg"
+                className="w-full h-auto rounded-lg"
               />
             </div>
           ))}
@@ -50,3 +51,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
