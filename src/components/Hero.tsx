@@ -26,7 +26,7 @@ const Hero = () => {
         <div className="relative">
           <div className="rounded-2xl aspect-[4/5] overflow-hidden shadow-2xl">
             <img 
-              src="/lovable-uploads/928321ef-2e54-4c44-9026-ab2cf176c2ba.png" 
+              src="/lovable-uploads/5f010c5e-0ba2-41a3-8991-0dda5213c7df.png" 
               alt="Paul - Your Longevity Coach" 
               className="w-full h-full object-cover"
             />
