@@ -3,12 +3,12 @@ import { Check } from "lucide-react";
 
 const WhoItsFor = () => {
   const targetAudience = [
-    "Parents 35+ who want to keep up with their kids",
-    "Busy professionals feeling older than their age",
-    "People with joint pain or morning stiffness",
-    "Anyone who's tried fitness programs that didn't stick",
-    "Those wanting science-backed longevity strategies",
-    "People ready to invest 20 minutes/day for transformation"
+    "You want to look 10+ years younger without expensive treatments",
+    "You're tired of feeling older than you actually are",
+    "You want boundless energy that lasts all day long",
+    "You're ready to turn back the clock on aging naturally",
+    "You want to move with the grace and vitality of your younger self",
+    "You're committed to just 20 minutes a day for total transformation"
   ];
 
   return (
