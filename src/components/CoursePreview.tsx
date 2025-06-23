@@ -6,7 +6,8 @@ const CoursePreview = () => {
     {
       title: "Strength Training",
       description: "Build lean muscle and functional power with safe, scalable bodyweight exercises.",
-      imageAlt: "Person doing push-ups or air squats outdoors"
+      imageAlt: "Person doing push-ups or air squats outdoors",
+      imageUrl: "/lovable-uploads/b0167f5c-b7c2-4bd6-8037-0e62d60e1eea.png"
     },
     {
       title: "Mobility & Flexibility", 
@@ -58,10 +59,18 @@ const CoursePreview = () => {
               className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <div className="aspect-[4/3] bg-stone-200 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                <div className="text-center text-stone-500">
-                  <div className="w-16 h-16 bg-amber-200 rounded-full mx-auto mb-2"></div>
-                  <p className="text-xs font-medium px-2">{section.imageAlt}</p>
-                </div>
+                {section.imageUrl ? (
+                  <img 
+                    src={section.imageUrl} 
+                    alt={section.imageAlt}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                ) : (
+                  <div className="text-center text-stone-500">
+                    <div className="w-16 h-16 bg-amber-200 rounded-full mx-auto mb-2"></div>
+                    <p className="text-xs font-medium px-2">{section.imageAlt}</p>
+                  </div>
+                )}
               </div>
               <h3 className="text-xl font-bold text-stone-800 mb-3">{section.title}</h3>
               <p className="text-stone-600 leading-relaxed">{section.description}</p>
