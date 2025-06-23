@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const CoursePreview = () => {
@@ -35,7 +36,8 @@ const CoursePreview = () => {
     {
       title: "Supplement Protocol",
       description: "Discover proven, longevity-boosting supplements to support recovery, cognition, and vitality.",
-      imageAlt: "Daily pill organizer with clean supplement bottles or ingredients"
+      imageAlt: "Daily pill organizer with clean supplement bottles or ingredients",
+      imageUrl: "/lovable-uploads/985eb4af-953a-4665-b2cd-d71af018a5aa.png"
     },
     {
       title: "Lifestyle Habits",
