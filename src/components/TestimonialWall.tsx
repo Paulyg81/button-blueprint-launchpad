@@ -1,14 +1,14 @@
 
 const TestimonialWall = () => {
   const quickTestimonials = [
-    ""This program changed my life!"",
-    ""Finally, something that actually works."",
-    ""I feel amazing and look younger."",
-    ""Best investment I've made for my health."",
-    ""Simple, effective, and life-changing."",
-    ""My energy levels are through the roof!"",
-    ""I move better than I have in years."",
-    ""This is the fountain of youth!""
+    "This program changed my life!",
+    "Finally, something that actually works.",
+    "I feel amazing and look younger.",
+    "Best investment I've made for my health.",
+    "Simple, effective, and life-changing.",
+    "My energy levels are through the roof!",
+    "I move better than I have in years.",
+    "This is the fountain of youth!"
   ];
 
   return (
@@ -25,7 +25,7 @@ const TestimonialWall = () => {
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
             >
               <div className="w-12 h-12 bg-amber-200 rounded-full mx-auto mb-4"></div>
-              <p className="text-stone-700 italic font-medium">{testimonial}</p>
+              <p className="text-stone-700 italic font-medium">"{testimonial}"</p>
             </div>
           ))}
         </div>
