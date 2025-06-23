@@ -29,7 +29,8 @@ const CoursePreview = () => {
     {
       title: "Nutrition Guidance",
       description: "Learn simple, powerful food swaps and habits that fuel your body and protect your cells.",
-      imageAlt: "Healthy colorful meal or hands preparing whole food ingredients"
+      imageAlt: "Healthy colorful meal or hands preparing whole food ingredients",
+      imageUrl: "/lovable-uploads/26c6da67-f166-40cb-b6b8-55884c998c65.png"
     },
     {
       title: "Supplement Protocol",
