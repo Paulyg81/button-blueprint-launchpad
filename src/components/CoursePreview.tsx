@@ -17,7 +17,8 @@ const CoursePreview = () => {
     {
       title: "Balance & Coordination",
       description: "Train stability, control, and fall-prevention through gentle, mindful balance practices.",
-      imageAlt: "One-leg stance, or soft barefoot balance on a log or mat"
+      imageAlt: "One-leg stance, or soft barefoot balance on a log or mat",
+      imageUrl: "/lovable-uploads/a28e64a1-6897-4036-bcd6-06887c1f8d2d.png"
     },
     {
       title: "High-Intensity Longevity Training",
