@@ -9,10 +9,22 @@ const SocialProof = () => {
     { icon: Award, number: "50+", label: "Success Stories" }
   ];
 
-  const testimonialImages = [
-    "/lovable-uploads/c22151d4-5a56-4fcb-97b5-61060793e963.png",
-    "/lovable-uploads/5aedffd1-bfef-4f51-ab16-725da5991141.png",
-    "/lovable-uploads/077d8408-ae29-4a16-93f2-9b3f57bd6b2d.png"
+  const testimonialHighlights = [
+    {
+      quote: "Lost 15 years off my biological age in just 3 weeks!",
+      name: "Maria S.",
+      age: "Age 48"
+    },
+    {
+      quote: "My doctor couldn't believe my latest blood work results.",
+      name: "Robert K.",
+      age: "Age 55"
+    },
+    {
+      quote: "I have more energy now than I did in my 30s.",
+      name: "Susan M.",
+      age: "Age 42"
+    }
   ];
 
   return (
@@ -45,18 +57,25 @@ const SocialProof = () => {
           ))}
         </div>
 
-        {/* Testimonial Images */}
+        {/* Quick Testimonials */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {testimonialImages.map((image, index) => (
+          {testimonialHighlights.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
             >
-              <img 
-                src={image} 
-                alt={`Testimonial ${index + 1}`}
-                className="w-full h-auto rounded-lg"
-              />
+              <div className="flex justify-center mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
+                ))}
+              </div>
+              <p className="text-stone-700 italic mb-4 font-medium">
+                "{testimonial.quote}"
+              </p>
+              <div className="text-sm">
+                <div className="font-semibold text-stone-800">{testimonial.name}</div>
+                <div className="text-stone-500">{testimonial.age}</div>
+              </div>
             </div>
           ))}
         </div>
