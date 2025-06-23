@@ -23,7 +23,8 @@ const CoursePreview = () => {
     {
       title: "High-Intensity Longevity Training",
       description: "Short bursts of controlled intensity to boost endurance, metabolism, and cardiovascular health.",
-      imageAlt: "Person doing quick bodyweight cardio or interval-style movement"
+      imageAlt: "Person doing quick bodyweight cardio or interval-style movement",
+      imageUrl: "/lovable-uploads/b49a3f07-6fd5-4735-af8f-2a7ede4796c0.png"
     },
     {
       title: "Nutrition Guidance",
