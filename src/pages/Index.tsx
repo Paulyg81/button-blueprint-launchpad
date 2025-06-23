@@ -2,7 +2,6 @@
 import Hero from "@/components/Hero";
 import CoursePreview from "@/components/CoursePreview";
 import Benefits from "@/components/Benefits";
-import SocialProof from "@/components/SocialProof";
 import CourseBreakdown from "@/components/CourseBreakdown";
 import Testimonials from "@/components/Testimonials";
 import WhoItsFor from "@/components/WhoItsFor";
@@ -19,7 +18,6 @@ const Index = () => {
       <Hero />
       <CoursePreview />
       <Benefits />
-      <SocialProof />
       <CourseBreakdown />
       <Testimonials />
       <WhoItsFor />
