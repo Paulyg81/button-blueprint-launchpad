@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 
 const CoursePreview = () => {
@@ -88,7 +89,7 @@ const CoursePreview = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300"
+            className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full transition-all duration-300 h-auto"
           >
             Start Your Blueprint Today
           </Button>

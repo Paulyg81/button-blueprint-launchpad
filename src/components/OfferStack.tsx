@@ -45,7 +45,7 @@ const OfferStack = () => {
         
         <Button 
           size="lg" 
-          className="bg-amber-600 hover:bg-amber-500 text-white font-bold px-12 py-6 text-xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
+          className="bg-amber-600 hover:bg-amber-500 text-white font-black px-16 py-8 text-2xl md:text-3xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 h-auto"
         >
           Yes! I Want the Blueprint for $47
         </Button>

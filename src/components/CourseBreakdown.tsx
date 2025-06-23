@@ -38,7 +38,7 @@ const CourseBreakdown = () => {
         <div className="text-center">
           <Button 
             size="lg" 
-            className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-amber-600 hover:bg-amber-700 text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 h-auto"
           >
             Join the Blueprint
           </Button>
