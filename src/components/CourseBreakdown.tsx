@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
@@ -9,8 +8,8 @@ const CourseBreakdown = () => {
     { day: 9, title: "Recovery Mastery", description: "Learn advanced recovery techniques for optimal cellular repair." },
     { day: 13, title: "Fascia & Flow", description: "Unlock mobility and flexibility through targeted fascia work." },
     { day: 16, title: "Energy Systems", description: "Optimize your metabolic health for sustained vitality." },
-    { day: 18, title: "Re-Test & Measure", description: "Track your biological age improvements with key benchmarks." },
-    { day: 19, title: "Integration Day", description: "Combine all elements into your personalized longevity routine." },
+    { day: 18, title: "Strength Training Principles", description: "Master the fundamentals of strength training for longevity and vitality." },
+    { day: 19, title: "Daily Life Integration", description: "Learn how to seamlessly integrate strength training into your daily routine." },
     { day: 20, title: "Longevity Lifestyle", description: "Create sustainable habits for lifelong youth and vitality." }
   ];
 
