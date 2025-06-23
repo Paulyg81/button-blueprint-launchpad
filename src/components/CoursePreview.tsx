@@ -2,36 +2,82 @@
 import { Button } from "@/components/ui/button";
 
 const CoursePreview = () => {
+  const blueprintSections = [
+    {
+      title: "Strength Training",
+      description: "Build lean muscle and functional power with safe, scalable bodyweight exercises.",
+      imageAlt: "Person doing push-ups or air squats outdoors"
+    },
+    {
+      title: "Mobility & Flexibility", 
+      description: "Restore range of motion and reduce joint stiffness with dynamic, everyday movement drills.",
+      imageAlt: "Someone doing a deep lunge stretch or yoga-style flow"
+    },
+    {
+      title: "Balance & Coordination",
+      description: "Train stability, control, and fall-prevention through gentle, mindful balance practices.",
+      imageAlt: "One-leg stance, or soft barefoot balance on a log or mat"
+    },
+    {
+      title: "High-Intensity Longevity Training",
+      description: "Short bursts of controlled intensity to boost endurance, metabolism, and cardiovascular health.",
+      imageAlt: "Person doing quick bodyweight cardio or interval-style movement"
+    },
+    {
+      title: "Nutrition Guidance",
+      description: "Learn simple, powerful food swaps and habits that fuel your body and protect your cells.",
+      imageAlt: "Healthy colorful meal or hands preparing whole food ingredients"
+    },
+    {
+      title: "Supplement Protocol",
+      description: "Discover proven, longevity-boosting supplements to support recovery, cognition, and vitality.",
+      imageAlt: "Daily pill organizer with clean supplement bottles or ingredients"
+    },
+    {
+      title: "Lifestyle Habits",
+      description: "Layer in restorative rituals like cold showers, sleep optimization, journaling, and sun exposure.",
+      imageAlt: "Sunrise walk, journaling by a window, or peaceful moment of self-care"
+    }
+  ];
+
   return (
     <section className="py-20 px-4 bg-white">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-stone-800">
-          Here's What You Get: <span className="text-amber-600">20 Days to Longevity Mastery</span>
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-stone-800">
+          Your Complete Blueprint to <span className="text-amber-600">Aging in Reverse</span>
         </h2>
         
-        <div className="grid grid-cols-4 md:grid-cols-5 gap-3 md:gap-4 mb-12">
-          {Array.from({ length: 20 }, (_, i) => (
+        <p className="text-lg md:text-xl text-stone-600 mb-12 max-w-4xl mx-auto text-center leading-relaxed">
+          Over 20 days, this program will guide you through evidence-based strategies to regain strength, mobility, energy, and confidence — using only your bodyweight and a handful of high-impact habits designed to help you age in reverse.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {blueprintSections.map((section, index) => (
             <div 
-              key={i} 
-              className="bg-stone-100 rounded-lg aspect-square flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-300"
+              key={index} 
+              className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <div className="text-center">
-                <div className="w-8 h-8 bg-amber-600 rounded-full mx-auto mb-2"></div>
-                <p className="text-xs md:text-sm font-semibold text-stone-700">
-                  Day {i + 1}
-                </p>
+              <div className="aspect-[4/3] bg-stone-200 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                <div className="text-center text-stone-500">
+                  <div className="w-16 h-16 bg-amber-200 rounded-full mx-auto mb-2"></div>
+                  <p className="text-xs font-medium px-2">{section.imageAlt}</p>
+                </div>
               </div>
+              <h3 className="text-xl font-bold text-stone-800 mb-3">{section.title}</h3>
+              <p className="text-stone-600 leading-relaxed">{section.description}</p>
             </div>
           ))}
         </div>
         
-        <Button 
-          variant="outline" 
-          size="lg" 
-          className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300"
-        >
-          See What's Inside Each Day
-        </Button>
+        <div className="text-center">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-semibold px-8 py-3 rounded-full transition-all duration-300"
+          >
+            Start Your Blueprint Today
+          </Button>
+        </div>
       </div>
     </section>
   );
