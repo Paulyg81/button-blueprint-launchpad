@@ -26,9 +26,6 @@ const CourseBreakdown = () => {
               key={index} 
               className="bg-gradient-to-br from-stone-50 to-amber-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
-              <div className="bg-amber-600 text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg mb-4">
-                {item.day}
-              </div>
               <h3 className="text-xl font-bold mb-3 text-stone-800">{item.title}</h3>
               <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
             </div>
