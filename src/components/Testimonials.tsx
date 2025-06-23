@@ -1,30 +1,25 @@
 
 const Testimonials = () => {
-  const testimonials = [
+  const testimonialImages = [
     {
-      quote: "I feel 10 years younger after just 2 weeks. The daily sessions are perfect - not overwhelming but incredibly effective.",
-      name: "Sarah M.",
-      age: "42"
+      src: "/lovable-uploads/3c838c3b-9db6-4303-96bd-16bd4abadfc5.png",
+      alt: "Natasha testimonial"
     },
     {
-      quote: "This is the reset I needed. My energy is through the roof and my back pain is completely gone.",
-      name: "Mark T.",
-      age: "38"
+      src: "/lovable-uploads/4112ac3e-8776-46c7-9742-fa64bc3a2298.png",
+      alt: "Julian testimonial"
     },
     {
-      quote: "Every session is simple, doable, and powerful. I've tried so many programs but this one actually works.",
-      name: "Jennifer L.",
-      age: "45"
+      src: "/lovable-uploads/4248f6f2-2f7f-43a3-857d-09f558251a9d.png",
+      alt: "Romy testimonial"
     },
     {
-      quote: "The science behind this program convinced me, but the results blew me away. I move like I'm in my 20s again.",
-      name: "David R.",
-      age: "52"
+      src: "/lovable-uploads/106f18a6-75af-4140-b591-2fe508106a90.png",
+      alt: "Susie testimonial"
     },
     {
-      quote: "Finally, a program that fits into my busy schedule. 20 minutes a day changed everything.",
-      name: "Lisa K.",
-      age: "39"
+      src: "/lovable-uploads/1f8ee829-0176-4cd4-9dce-e83a25d7a0f1.png",
+      alt: "Andrew testimonial"
     }
   ];
 
@@ -36,19 +31,16 @@ const Testimonials = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
+          {testimonialImages.map((testimonial, index) => (
             <div 
               key={index} 
               className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-amber-200 rounded-full flex-shrink-0"></div>
-                <div className="ml-4">
-                  <p className="font-semibold text-stone-800">{testimonial.name}</p>
-                  <p className="text-sm text-stone-500">Age {testimonial.age}</p>
-                </div>
-              </div>
-              <p className="text-stone-700 italic leading-relaxed">"{testimonial.quote}"</p>
+              <img 
+                src={testimonial.src} 
+                alt={testimonial.alt} 
+                className="w-full rounded-lg"
+              />
             </div>
           ))}
         </div>
