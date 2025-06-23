@@ -24,12 +24,12 @@ const Hero = () => {
           </Button>
         </div>
         <div className="relative">
-          <div className="bg-stone-200 rounded-2xl aspect-[4/5] flex items-center justify-center shadow-2xl">
-            <div className="text-center text-stone-500">
-              <div className="w-24 h-24 bg-stone-300 rounded-full mx-auto mb-4"></div>
-              <p className="text-lg font-medium">Hero Image Placeholder</p>
-              <p className="text-sm">Paul coaching outdoors</p>
-            </div>
+          <div className="rounded-2xl aspect-[4/5] overflow-hidden shadow-2xl">
+            <img 
+              src="/lovable-uploads/928321ef-2e54-4c44-9026-ab2cf176c2ba.png" 
+              alt="Paul - Your Longevity Coach" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
