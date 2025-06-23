@@ -9,22 +9,10 @@ const SocialProof = () => {
     { icon: Award, number: "50+", label: "Success Stories" }
   ];
 
-  const testimonialHighlights = [
-    {
-      quote: "Lost 15 years off my biological age in just 3 weeks!",
-      name: "Maria S.",
-      age: "Age 48"
-    },
-    {
-      quote: "My doctor couldn't believe my latest blood work results.",
-      name: "Robert K.",
-      age: "Age 55"
-    },
-    {
-      quote: "I have more energy now than I did in my 30s.",
-      name: "Susan M.",
-      age: "Age 42"
-    }
+  const testimonialImages = [
+    "/lovable-uploads/22da5eea-4603-496f-9246-c9be49ec2059.png",
+    "/lovable-uploads/117aaf11-e51d-43a0-9277-7abe4f31e31a.png",
+    "/lovable-uploads/1d23888d-8a55-4578-a993-2a8b12faabf0.png"
   ];
 
   return (
@@ -57,25 +45,18 @@ const SocialProof = () => {
           ))}
         </div>
 
-        {/* Quick Testimonials */}
+        {/* Testimonial Images */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
-          {testimonialHighlights.map((testimonial, index) => (
+          {testimonialImages.map((image, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
+              className="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="flex justify-center mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-amber-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-stone-700 italic mb-4 font-medium">
-                "{testimonial.quote}"
-              </p>
-              <div className="text-sm">
-                <div className="font-semibold text-stone-800">{testimonial.name}</div>
-                <div className="text-stone-500">{testimonial.age}</div>
-              </div>
+              <img 
+                src={image} 
+                alt={`Transformation testimonial ${index + 1}`}
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           ))}
         </div>
