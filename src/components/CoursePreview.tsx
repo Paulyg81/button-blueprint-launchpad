@@ -40,7 +40,8 @@ const CoursePreview = () => {
     {
       title: "Lifestyle Habits",
       description: "Layer in restorative rituals like cold showers, sleep optimization, journaling, and sun exposure.",
-      imageAlt: "Sunrise walk, journaling by a window, or peaceful moment of self-care"
+      imageAlt: "Sunrise walk, journaling by a window, or peaceful moment of self-care",
+      imageUrl: "/lovable-uploads/61d6c2c8-e986-415b-97f4-0a0cf3d6c344.png"
     }
   ];
 
