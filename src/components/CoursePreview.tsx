@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 const CoursePreview = () => {
@@ -12,7 +11,8 @@ const CoursePreview = () => {
     {
       title: "Mobility & Flexibility", 
       description: "Restore range of motion and reduce joint stiffness with dynamic, everyday movement drills.",
-      imageAlt: "Someone doing a deep lunge stretch or yoga-style flow"
+      imageAlt: "Someone doing a deep lunge stretch or yoga-style flow",
+      imageUrl: "/lovable-uploads/ed55299a-5ae1-4857-8b04-9de274ffa9e5.png"
     },
     {
       title: "Balance & Coordination",
