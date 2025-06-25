@@ -1,5 +1,9 @@
 
+import { useState } from "react";
+
 const TestimonialWall = () => {
+  const [expandedCards, setExpandedCards] = useState<number[]>([]);
+
   const testimonials = [
     {
       image: "/lovable-uploads/a54c3f73-8aac-4732-8895-28aceb31acd5.png",
@@ -33,37 +37,78 @@ const TestimonialWall = () => {
     }
   ];
 
+  const toggleExpanded = (index: number) => {
+    setExpandedCards(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
+
+  const truncateText = (text: string, maxLength: number) => {
+    if (text.length <= maxLength) return text;
+    return text.substring(0, maxLength).trim() + "...";
+  };
+
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-amber-50 to-stone-50">
+    <section className="py-20 px-4 bg-gradient-to-br from-stone-50 to-amber-50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-stone-800">
           Join Thousands Who Are Already <span className="text-amber-600">Aging in Reverse</span>
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <div 
-              key={index} 
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="mb-4">
-                <img 
-                  src={testimonial.image} 
-                  alt={`${testimonial.name} testimonial`}
-                  className="w-full h-48 object-cover rounded-lg"
-                />
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+          {testimonials.map((testimonial, index) => {
+            const isExpanded = expandedCards.includes(index);
+            const shouldTruncate = testimonial.quote.length > 200;
+            const displayText = isExpanded || !shouldTruncate 
+              ? testimonial.quote 
+              : truncateText(testimonial.quote, 200);
+
+            return (
+              <div 
+                key={index} 
+                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+              >
+                {/* Image Section */}
+                <div className="p-6 pb-4">
+                  <img 
+                    src={testimonial.image} 
+                    alt={`${testimonial.name} testimonial`}
+                    className="w-full h-32 sm:h-40 object-cover rounded-lg"
+                  />
+                </div>
+                
+                {/* Content Section */}
+                <div className="px-6 pb-4 flex-grow flex flex-col">
+                  {/* Name and Title */}
+                  <div className="mb-4">
+                    <h4 className="font-bold text-stone-800 text-base">{testimonial.name}</h4>
+                    {testimonial.title && (
+                      <p className="text-stone-600 text-sm">{testimonial.title}</p>
+                    )}
+                  </div>
+                  
+                  {/* Testimonial Text */}
+                  <div className="flex-grow">
+                    <p className="text-stone-700 italic text-base leading-relaxed">
+                      "{displayText}"
+                    </p>
+                    
+                    {/* Read More/Less Button */}
+                    {shouldTruncate && (
+                      <button
+                        onClick={() => toggleExpanded(index)}
+                        className="text-amber-600 hover:text-amber-700 text-sm font-medium mt-2 transition-colors"
+                      >
+                        {isExpanded ? "Read less" : "Read more"}
+                      </button>
+                    )}
+                  </div>
+                </div>
               </div>
-              <p className="text-stone-700 italic mb-4 text-sm leading-relaxed">
-                "{testimonial.quote}"
-              </p>
-              <div className="border-t pt-4">
-                <h4 className="font-bold text-stone-800">{testimonial.name}</h4>
-                {testimonial.title && (
-                  <p className="text-stone-600 text-sm">{testimonial.title}</p>
-                )}
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
