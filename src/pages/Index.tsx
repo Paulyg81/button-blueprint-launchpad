@@ -9,7 +9,6 @@ import WhoItsFor from "@/components/WhoItsFor";
 import MeetYourCoach from "@/components/MeetYourCoach";
 import FAQ from "@/components/FAQ";
 import OfferStack from "@/components/OfferStack";
-import SneakPeek from "@/components/SneakPeek";
 import TestimonialWall from "@/components/TestimonialWall";
 import Footer from "@/components/Footer";
 
@@ -33,7 +32,6 @@ const Index = () => {
       <MeetYourCoach />
       <FAQ />
       <OfferStack />
-      <SneakPeek />
       <TestimonialWall />
       <Footer />
     </div>
