@@ -29,12 +29,12 @@ const FAQ = () => {
       answer: "This program is especially effective for people 35+. Many of my best results have come from students in their 50s, 60s, and beyond."
     },
     {
-      question: "What if I have injuries or limitations?",
-      answer: "Each session includes modifications for common limitations. However, always consult your healthcare provider before starting any new program."
+      question: "What if I've tried programs before and nothing stuck?",
+      answer: "This isn't a quick fix — it's a complete system. You'll not only move differently but think differently. We give you the tools to make it stick, from habit stacking to biological feedback loops."
     },
     {
-      question: "Is there a money-back guarantee?",
-      answer: "Yes! I offer a 30-day money-back guarantee. Try the program risk-free and see the results for yourself."
+      question: "Can I do this if I have low energy or joint pain?",
+      answer: "Yes. This program is intentionally gentle yet powerful. Each session includes modifications, and many clients report increased energy and reduced pain within the first week."
     }
   ];
 
