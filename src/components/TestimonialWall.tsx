@@ -7,12 +7,12 @@ const TestimonialWall = () => {
   const testimonials = [
     {
       quote: "I really want to say a big thanks – I couldn't have lost 12kgs in 12 weeks without the program. It has got me up and about and I'm feeling so much better than I did before I started. Serious life-changer!",
-      name: "Simon Schenkel",
+      name: "Simon",
       title: "Lawyer"
     },
     {
       quote: "I'm in my 14th week and continue to love the support Dan and Paul have given me. Dan and Paul have identified and created an awesome program for getting Dads to where they want to be physically, emotionally and mentally. It is a very holistic program where they both have your back and immediately delivers value within a week. The weekly check-ins, daily chats combined with the nutrition, workout training and 1:1 approach make this an invaluable program for a Dad. Can't recommend it enough.",
-      name: "Nick Pape",
+      name: "Nick",
       title: "Digital Marketing Manager"
     },
     {
@@ -22,12 +22,12 @@ const TestimonialWall = () => {
     },
     {
       quote: "I was overweight and slothful. The ability to move freely was diminished and some of the joints started to hurt. As well I always felt tired and lacked the energy to get up and go! I was certainly feeling my age. I needed a 'circuit breaker', that would support, guide and inspire. I lost weight (over 6kg) and learned how to enjoy sensible eating without having to permanently give up some of life's pleasure of food and drink. Exercising is no longer a chore, but is fun and something to look forward to. I look better and I feel better. The HERO team are supportive, and creative – they will tailor a programme that is just right for you. And with their encouragement and tremendous support, you can achieve fantastic results. HERO coaching and support is going to be there all the way -and it will be delivered in spades.",
-      name: "Steve Skurnik",
+      name: "Steve",
       title: "Architect"
     },
     {
       quote: "Hero has been an absolute life changer for me. I came to this program 8 months after my daughter was born. I was exhausted, overweight and struggling to make the wellbeing changes I knew I needed - I was stuck. I turned to Paul and Dan for support after seeing the real-life results that previous Hero graduates had achieved and it was one of the best decisions I have ever made. The results have been incredible!",
-      name: "Jarod Kaplan",
+      name: "Jarod",
       title: "Counsellor"
     }
   ];
