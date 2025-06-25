@@ -1,16 +1,41 @@
+
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 const CourseBreakdown = () => {
   const keyDays = [
-    { day: 1, title: "Truth About Aging", description: "Understand the science behind biological aging and what you can control." },
-    { day: 5, title: "Movement Fundamentals", description: "Build the foundation of longevity-focused movement patterns." },
-    { day: 9, title: "Recovery Mastery", description: "Learn advanced recovery techniques for optimal cellular repair." },
-    { day: 13, title: "Fascia & Flow", description: "Unlock mobility and flexibility through targeted fascia work." },
-    { day: 16, title: "Energy Systems", description: "Optimize your metabolic health for sustained vitality." },
-    { day: 18, title: "Strength Training Principles", description: "Master the fundamentals of strength training for longevity and vitality." },
-    { day: 19, title: "Daily Life Integration", description: "Learn how to seamlessly integrate strength training into your daily routine." },
-    { day: 20, title: "Longevity Lifestyle", description: "Create sustainable habits for lifelong youth and vitality." }
+    { 
+      title: "Discover Your Real Age (and How to Change It)", 
+      description: "Unlock the 7 biological markers that matter more than your birthday — and test where you stand." 
+    },
+    { 
+      title: "Build a Body That Moves Like It's 20 Years Younger", 
+      description: "Train your legs, hips, and glutes to restore strength, mobility, and joint freedom — without weights." 
+    },
+    { 
+      title: "Stand Taller, Breathe Deeper, Feel Lighter", 
+      description: "Fix your posture, activate your core, and create a younger, stronger foundation." 
+    },
+    { 
+      title: "Become Unshakably Strong", 
+      description: "Prevent falls, protect your joints, and move with confidence at any age." 
+    },
+    { 
+      title: "Recover Like You're 25 Again", 
+      description: "Learn how recovery — not just exercise — is your most powerful anti-aging tool." 
+    },
+    { 
+      title: "Unlock Your Fascia and Reclaim Your Flexibility", 
+      description: "Stretch, hydrate, and release years of tension trapped in your connective tissue." 
+    },
+    { 
+      title: "Speed Up Your Brain-Body Connection", 
+      description: "Boost reaction time, coordination, and mental clarity through movement." 
+    },
+    { 
+      title: "Retest Your Age: See Just How Far You've Come", 
+      description: "Measure your new biological age and prove that you really are aging in reverse." 
+    }
   ];
 
   return (
