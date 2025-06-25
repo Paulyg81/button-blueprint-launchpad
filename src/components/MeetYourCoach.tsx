@@ -16,12 +16,12 @@ const MeetYourCoach = () => {
             </p>
           </div>
           <div className="relative">
-            <div className="bg-stone-200 rounded-2xl aspect-[4/5] flex items-center justify-center shadow-2xl">
-              <div className="text-center text-stone-500">
-                <div className="w-24 h-24 bg-stone-300 rounded-full mx-auto mb-4"></div>
-                <p className="text-lg font-medium">Coach Paul</p>
-                <p className="text-sm">Professional Headshot</p>
-              </div>
+            <div className="rounded-2xl aspect-[4/5] overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/1ebdd04f-d93c-46e2-bb50-026c269b3854.png" 
+                alt="Coach Paul - Professional Headshot" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
