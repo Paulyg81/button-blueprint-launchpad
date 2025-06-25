@@ -9,10 +9,16 @@ const MeetYourCoach = () => {
               Hey, I'm <span className="text-amber-600">Paul</span> — Your Longevity Coach
             </h2>
             <p className="text-lg text-stone-700 leading-relaxed mb-6">
-              I've helped hundreds of people over 35 build strong, mobile, pain-free bodies that age gracefully. After years of research and real-world testing, this is my best, most complete program.
+              For over 25 years, I've helped thousands of people defy the rules of aging — not with fads or gimmicks, but with science, movement, and habit mastery.
+            </p>
+            <p className="text-lg text-stone-700 leading-relaxed mb-6">
+              As a longevity coach, I specialize in helping people over 35 build strong, mobile, pain-free bodies that are built to last. I've worked with busy parents, professionals, and everyday people who want to stay active, independent, and full of life — not just now, but for decades to come.
+            </p>
+            <p className="text-lg text-stone-700 leading-relaxed mb-6">
+              The Benjamin Button Blueprint is the culmination of everything I've learned — a powerful, step-by-step system designed to reverse biological aging and help you reclaim energy, strength, and confidence from the inside out.
             </p>
             <p className="text-lg text-stone-700 leading-relaxed">
-              The Benjamin Button Blueprint isn't just another fitness program—it's a scientifically-backed system that addresses the root causes of aging, not just the symptoms.
+              If you want to feel younger, move better, and show up fully for the people you love — this is where your comeback begins.
             </p>
           </div>
           <div className="relative">
