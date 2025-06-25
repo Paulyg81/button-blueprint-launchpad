@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 const TestimonialWall = () => {
@@ -46,7 +45,7 @@ const TestimonialWall = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-stone-50 to-amber-50">
+    <section className="py-20 px-4 bg-gradient-to-br from-stone-400 to-amber-300">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-stone-800">
           Join Thousands Who Are Already <span className="text-amber-600">Aging in Reverse</span>

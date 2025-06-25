@@ -36,7 +36,7 @@ const CoursePreview = () => {
     imageAlt: "Sunrise walk, journaling by a window, or peaceful moment of self-care",
     imageUrl: "/lovable-uploads/61d6c2c8-e986-415b-97f4-0a0cf3d6c344.png"
   }];
-  return <section className="py-20 px-4 bg-white">
+  return <section className="py-20 px-4 bg-stone-100">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-stone-800">
           Your Complete Blueprint to <span className="text-amber-600">Aging in Reverse</span>

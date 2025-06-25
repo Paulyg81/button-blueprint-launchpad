@@ -1,4 +1,3 @@
-
 import { Star } from "lucide-react";
 
 const Testimonials = () => {
@@ -26,7 +25,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-stone-50 to-amber-50">
+    <section className="py-24 px-4 bg-gradient-to-br from-stone-300 to-amber-200">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-stone-800">
           What Students Are Saying

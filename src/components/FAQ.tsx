@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -39,7 +38,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-stone-250">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-stone-800">
           Frequently Asked Questions

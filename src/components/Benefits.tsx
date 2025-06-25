@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge, Clock, Heart, Star, User, Eye } from "lucide-react";
 
@@ -13,7 +12,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-amber-50 to-stone-50">
+    <section className="py-20 px-4 bg-gradient-to-br from-amber-100 to-stone-150">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-stone-800">
           This Blueprint Will Help You…
