@@ -4,24 +4,25 @@ import { Check } from "lucide-react";
 
 const OfferStack = () => {
   const included = [
-    "20 daily follow-along videos (HD quality, professionally produced)",
-    "20 downloadable trackers, guides, & habit PDFs",
-    "7 biological age testing benchmarks with tracking sheets",
-    "Bonus: 5 mobility & flow routines for active recovery",
-    "Bonus: Longevity nutrition quick-start guide",
-    "Lifetime access to all materials and future updates",
-    "Private Facebook community access",
-    "30-day money-back guarantee"
+    "20-day guided video curriculum combining movement, mindset & longevity science",
+    "Real-time education on exercise, strength, fascia, breathwork & flexibility",
+    "Step-by-step training in mobility, core, posture, and functional patterns",
+    "Lifetime access to Yin-style recovery/stretching routines",
+    "Nutrition & supplement guidance based on proven longevity principles",
+    "Bonus: Biological age testing sequence (7 benchmark assessments to track progress)",
+    "Retesting protocol to help guide your long-term personalized training plan",
+    "Sleep, recovery & energy optimization protocols for the real world",
+    "Lifetime access to all current and future material"
   ];
 
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-stone-800 to-stone-900 text-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Everything You Need to Start <span className="text-amber-400">Aging in Reverse</span>
+          Everything You Need to Start <span className="text-amber-400">Aging in Reverse — For Real</span>
         </h2>
         <p className="text-xl mb-12 text-stone-300">
-          Here's everything included in The Benjamin Button Blueprint:
+          Here's exactly what's included in your Benjamin Button Blueprint membership:
         </p>
         
         <div className="bg-white text-stone-800 rounded-2xl p-8 shadow-2xl mb-8">
@@ -37,9 +38,9 @@ const OfferStack = () => {
           </div>
           
           <div className="border-t border-stone-200 pt-6">
-            <p className="text-2xl font-bold mb-2">Total Value: <span className="line-through text-stone-500">$297</span></p>
+            <p className="text-2xl font-bold mb-2">Total Value: <span className="line-through text-stone-500">~$297~</span></p>
             <p className="text-4xl font-bold text-amber-600 mb-6">Your Investment: Only $47</p>
-            <p className="text-sm text-stone-500 mb-6">One-time payment • Lifetime access • 30-day guarantee</p>
+            <p className="text-sm text-stone-500 mb-6">One-time payment • Lifetime access • 7-test starting protocol included</p>
           </div>
         </div>
         
