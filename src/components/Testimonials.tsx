@@ -30,11 +30,11 @@ const Testimonials = () => {
           What Students Are Saying
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {testimonialImages.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <img 
                 src={testimonial.src} 
