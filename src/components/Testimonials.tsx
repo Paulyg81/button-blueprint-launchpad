@@ -1,4 +1,6 @@
 
+import { Star } from "lucide-react";
+
 const Testimonials = () => {
   const testimonialImages = [
     {
@@ -24,23 +26,46 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-stone-50 to-amber-50">
+    <section className="py-24 px-4 bg-gradient-to-br from-stone-50 to-amber-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-stone-800">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-stone-800">
           What Students Are Saying
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           {testimonialImages.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white p-8 md:p-12 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[400px] md:min-h-[500px] flex flex-col"
             >
-              <img 
-                src={testimonial.src} 
-                alt={testimonial.alt} 
-                className="w-full h-auto rounded-lg"
-              />
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span className="text-amber-800 font-bold text-lg md:text-xl">
+                    {testimonial.alt.charAt(0).toUpperCase()}
+                  </span>
+                </div>
+                <div>
+                  <div className="flex mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star 
+                        key={i} 
+                        className="w-5 h-5 md:w-6 md:h-6 fill-yellow-400 text-yellow-400" 
+                      />
+                    ))}
+                  </div>
+                  <h3 className="font-bold text-lg md:text-xl text-stone-800">
+                    {testimonial.alt.split(' ')[0]}
+                  </h3>
+                </div>
+              </div>
+              
+              <div className="flex-1">
+                <img 
+                  src={testimonial.src} 
+                  alt={testimonial.alt} 
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
             </div>
           ))}
         </div>
