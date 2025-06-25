@@ -10,31 +10,31 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Do I need a gym or equipment?",
-      answer: "Not at all! The entire program uses bodyweight movements and can be done in your living room. I've specifically designed this to work anywhere, anytime."
+      answer: "No gym required. Every session is designed to be done at home using only your bodyweight."
     },
     {
       question: "Is this science-based?",
-      answer: "Absolutely. Every technique is backed by peer-reviewed research on longevity, cellular health, and biological aging. I reference the studies throughout the program."
+      answer: "Yes. Every element of this program is backed by research in exercise physiology, neurology, and aging science."
     },
     {
       question: "How long is each daily session?",
-      answer: "Each session is 15-25 minutes. They're designed to fit into even the busiest schedules while delivering maximum impact."
+      answer: "Each session takes 15–20 minutes and includes education, movement, and reflection."
     },
     {
       question: "Can I go at my own pace?",
-      answer: "Yes! You have lifetime access and can repeat days or take rest days as needed. The program adapts to your schedule and fitness level."
+      answer: "100%. You get lifetime access — whether you go daily, weekly, or repeat modules, it's designed to fit your life."
     },
     {
       question: "Will it work for someone over 50?",
-      answer: "This program is especially effective for people 35+. Many of my best results have come from students in their 50s, 60s, and beyond."
+      answer: "Absolutely. In fact, many of our most successful participants are 50, 60, even 70+. It's never too late to get stronger, more mobile, and biologically younger."
     },
     {
-      question: "What if I have injuries or limitations?",
-      answer: "Each session includes modifications for common limitations. However, always consult your healthcare provider before starting any new program."
+      question: "What if I've tried programs before and nothing stuck?",
+      answer: "This isn't a quick fix — it's a complete system. You'll not only move differently but think differently. We give you the tools to make it stick, from habit stacking to biological feedback loops."
     },
     {
-      question: "Is there a money-back guarantee?",
-      answer: "Yes! I offer a 30-day money-back guarantee. Try the program risk-free and see the results for yourself."
+      question: "Can I do this if I have low energy or joint pain?",
+      answer: "Yes. This program is intentionally gentle yet powerful. Each session includes modifications, and many clients report increased energy and reduced pain within the first week."
     }
   ];
 
