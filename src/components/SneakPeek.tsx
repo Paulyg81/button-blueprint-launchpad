@@ -14,14 +14,14 @@ const SneakPeek = () => {
         </p>
         
         <div className="relative bg-stone-800 rounded-2xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
-          <div className="aspect-video bg-gradient-to-br from-stone-700 to-stone-900 flex items-center justify-center">
-            <Button 
-              size="lg" 
-              className="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-4 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-            >
-              <Play className="w-6 h-6 mr-2" />
-              Watch Preview
-            </Button>
+          <div className="aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/XuyONOiml7g"
+              title="Benjamin Button Blueprint Preview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-2xl"
+            ></iframe>
           </div>
         </div>
         
