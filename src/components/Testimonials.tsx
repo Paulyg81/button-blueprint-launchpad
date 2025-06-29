@@ -1,3 +1,4 @@
+
 import { Star } from "lucide-react";
 
 const Testimonials = () => {
@@ -25,9 +26,9 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-stone-300 to-amber-200">
+    <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-stone-800">
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-black">
           What Students Are Saying
         </h2>
         
@@ -35,11 +36,11 @@ const Testimonials = () => {
           {testimonialImages.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 md:p-12 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 min-h-[400px] md:min-h-[500px] flex flex-col"
+              className="bg-gray-50 p-8 md:p-12 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 min-h-[400px] md:min-h-[500px] flex flex-col"
             >
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-amber-200 to-amber-300 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <span className="text-amber-800 font-bold text-lg md:text-xl">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-blue-600 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span className="text-white font-bold text-lg md:text-xl">
                     {testimonial.alt.charAt(0).toUpperCase()}
                   </span>
                 </div>
@@ -52,7 +53,7 @@ const Testimonials = () => {
                       />
                     ))}
                   </div>
-                  <h3 className="font-bold text-lg md:text-xl text-stone-800">
+                  <h3 className="font-bold text-lg md:text-xl text-black">
                     {testimonial.alt.split(' ')[0]}
                   </h3>
                 </div>

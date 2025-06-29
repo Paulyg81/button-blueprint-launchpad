@@ -39,23 +39,23 @@ const CourseBreakdown = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-gray-100">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-stone-800">
-          What You'll Learn Over <span className="text-amber-600">20 Days</span>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">
+          What You'll Learn Over <span className="text-blue-600">20 Days</span>
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {keyDays.map((item, index) => (
             <div 
               key={index} 
-              className="bg-gradient-to-br from-stone-50 to-amber-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200"
             >
-              <div className="bg-amber-600 text-white w-12 h-12 rounded-full flex items-center justify-center mb-4">
+              <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <Check size={24} strokeWidth={3} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-stone-800">{item.title}</h3>
-              <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
+              <h3 className="text-xl font-bold mb-3 text-black">{item.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>
@@ -63,7 +63,7 @@ const CourseBreakdown = () => {
         <div className="text-center">
           <Button 
             size="lg" 
-            className="bg-amber-600 hover:bg-amber-700 text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 h-auto"
+            className="bg-blue-600 hover:bg-blue-700 text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 h-auto"
           >
             Join the Blueprint
           </Button>
