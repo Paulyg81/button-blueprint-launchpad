@@ -15,8 +15,8 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-stone-50 to-amber-50">
-      <header className="bg-gradient-to-r from-amber-600 to-stone-700 text-white py-6 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <header className="bg-gradient-to-r from-black to-gray-800 text-white py-6 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="flex items-center justify-center gap-6 mb-4">
             <img 
