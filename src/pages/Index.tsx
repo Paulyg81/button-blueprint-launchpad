@@ -22,7 +22,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/a6ab7cab-9acb-4121-9fe5-881ae8bbf5a1.png" 
               alt="HERO Brand Logo" 
-              className="w-16 h-16 md:w-20 md:h-20 object-contain"
+              className="w-24 h-24 md:w-32 md:h-32 object-contain"
             />
           </div>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
