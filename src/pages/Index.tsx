@@ -18,6 +18,13 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-b from-stone-50 to-amber-50">
       <header className="bg-gradient-to-r from-amber-600 to-stone-700 text-white py-6 px-4">
         <div className="max-w-7xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-6 mb-4">
+            <img 
+              src="/lovable-uploads/a6ab7cab-9acb-4121-9fe5-881ae8bbf5a1.png" 
+              alt="HERO Brand Logo" 
+              className="w-16 h-16 md:w-20 md:h-20 object-contain"
+            />
+          </div>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
             The Benjamin Button Blueprint Revealed
           </h1>
