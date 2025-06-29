@@ -45,10 +45,10 @@ const TestimonialWall = () => {
   };
 
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: '#F9F5EF' }}>
+    <section className="py-20 px-4 bg-gradient-to-br from-stone-400 to-amber-300">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-900">
-          Join Thousands Who Are Already <span className="text-blue-600">Aging in Reverse</span>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-stone-800">
+          Join Thousands Who Are Already <span className="text-amber-600">Aging in Reverse</span>
         </h2>
         
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
@@ -62,25 +62,29 @@ const TestimonialWall = () => {
             return (
               <div 
                 key={index} 
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-slate-200"
+                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full"
               >
+                {/* Content Section */}
                 <div className="p-6 flex-grow flex flex-col">
+                  {/* Name and Title */}
                   <div className="mb-4">
-                    <h4 className="font-bold text-slate-900 text-base">{testimonial.name}</h4>
+                    <h4 className="font-bold text-stone-800 text-base">{testimonial.name}</h4>
                     {testimonial.title && (
-                      <p className="text-slate-600 text-sm">{testimonial.title}</p>
+                      <p className="text-stone-600 text-sm">{testimonial.title}</p>
                     )}
                   </div>
                   
+                  {/* Testimonial Text */}
                   <div className="flex-grow">
-                    <p className="text-slate-700 italic text-base leading-relaxed">
+                    <p className="text-stone-700 italic text-base leading-relaxed">
                       "{displayText}"
                     </p>
                     
+                    {/* Read More/Less Button */}
                     {shouldTruncate && (
                       <button
                         onClick={() => toggleExpanded(index)}
-                        className="text-blue-600 hover:text-blue-700 text-sm font-medium mt-2 transition-colors"
+                        className="text-amber-600 hover:text-amber-700 text-sm font-medium mt-2 transition-colors"
                       >
                         {isExpanded ? "Read less" : "Read more"}
                       </button>

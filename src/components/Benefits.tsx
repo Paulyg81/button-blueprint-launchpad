@@ -12,9 +12,9 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: '#F9F5EF' }}>
+    <section className="py-20 px-4 bg-gradient-to-br from-amber-100 to-stone-150">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-stone-800">
           This Blueprint Will Help You…
         </h2>
         
@@ -22,17 +22,17 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-200"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <benefit.icon className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <p className="text-lg font-semibold text-slate-800">{benefit.text}</p>
+              <benefit.icon className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+              <p className="text-lg font-semibold text-stone-700">{benefit.text}</p>
             </div>
           ))}
         </div>
         
         <Button 
           size="lg" 
-          className="bg-blue-600 hover:bg-blue-700 text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 h-auto"
+          className="bg-amber-600 hover:bg-amber-700 text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105 h-auto"
         >
           Start My Transformation Today
         </Button>

@@ -4,16 +4,16 @@ import { Play } from "lucide-react";
 
 const SneakPeek = () => {
   return (
-    <section className="py-20 px-4" style={{ backgroundColor: '#FAF9F6' }}>
+    <section className="py-20 px-4 bg-gradient-to-br from-stone-50 to-amber-100">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-stone-800">
           Want a Sneak Peak?
         </h2>
-        <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+        <p className="text-lg text-stone-600 mb-8 max-w-2xl mx-auto">
           Get a glimpse of what's inside the Benjamin Button Blueprint and see how you can start your transformation today.
         </p>
         
-        <div className="relative bg-slate-900 rounded-2xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
+        <div className="relative bg-stone-800 rounded-2xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
           <div className="aspect-video">
             <iframe
               src="https://www.youtube.com/embed/XuyONOiml7g"
@@ -25,7 +25,7 @@ const SneakPeek = () => {
           </div>
         </div>
         
-        <p className="text-sm text-slate-500 mt-4">
+        <p className="text-sm text-stone-500 mt-4">
           3 minute preview • No signup required
         </p>
       </div>

@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-
 const CoursePreview = () => {
   const blueprintSections = [{
     title: "Strength Training",
@@ -37,49 +36,33 @@ const CoursePreview = () => {
     imageAlt: "Sunrise walk, journaling by a window, or peaceful moment of self-care",
     imageUrl: "/lovable-uploads/61d6c2c8-e986-415b-97f4-0a0cf3d6c344.png"
   }];
-
-  return (
-    <section className="py-20 px-4" style={{ backgroundColor: '#F3F4F6' }}>
+  return <section className="py-20 px-4 bg-stone-100">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-slate-900">
-          Your Complete Blueprint to <span className="text-blue-600">Aging in Reverse</span>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-stone-800">
+          Your Complete Blueprint to <span className="text-amber-600">Aging in Reverse</span>
         </h2>
         
-        <p className="text-lg md:text-xl text-slate-600 mb-12 max-w-4xl mx-auto text-center leading-relaxed">
-          In just 20 days, this program will age you in reverse by guiding you through evidence-based strategies to regain strength, mobility, energy, and confidence — using only your bodyweight and a handful of high-impact habits designed to help you age in reverse.
-        </p>
+        <p className="text-lg md:text-xl text-stone-600 mb-12 max-w-4xl mx-auto text-center leading-relaxed"> In just 20 days, this program will age you in reverse by guiding you through evidence-based strategies to regain strength, mobility, energy, and confidence — using only your bodyweight and a handful of high-impact habits designed to help you age in reverse.</p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {blueprintSections.map((section, index) => (
-            <div key={index} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 border border-slate-200">
-              <div className="aspect-[4/3] bg-slate-100 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                {section.imageUrl ? (
-                  <img src={section.imageUrl} alt={section.imageAlt} className="w-full h-full object-cover rounded-lg" />
-                ) : (
-                  <div className="text-center text-slate-500">
-                    <div className="w-16 h-16 bg-blue-200 rounded-full mx-auto mb-2"></div>
+          {blueprintSections.map((section, index) => <div key={index} className="bg-gradient-to-br from-stone-50 to-amber-50 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300">
+              <div className="aspect-[4/3] bg-stone-200 rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                {section.imageUrl ? <img src={section.imageUrl} alt={section.imageAlt} className="w-full h-full object-cover rounded-lg" /> : <div className="text-center text-stone-500">
+                    <div className="w-16 h-16 bg-amber-200 rounded-full mx-auto mb-2"></div>
                     <p className="text-xs font-medium px-2">{section.imageAlt}</p>
-                  </div>
-                )}
+                  </div>}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">{section.title}</h3>
-              <p className="text-slate-600 leading-relaxed">{section.description}</p>
-            </div>
-          ))}
+              <h3 className="text-xl font-bold text-stone-800 mb-3">{section.title}</h3>
+              <p className="text-stone-600 leading-relaxed">{section.description}</p>
+            </div>)}
         </div>
         
         <div className="text-center">
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full transition-all duration-300 h-auto"
-          >
+          <Button variant="outline" size="lg" className="border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white font-black px-12 py-6 text-xl md:text-2xl rounded-full transition-all duration-300 h-auto">
             Start Your Blueprint Today
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CoursePreview;
