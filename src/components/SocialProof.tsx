@@ -1,7 +1,7 @@
 
 const SocialProof = () => {
   return (
-    <section className="py-20 px-4 bg-gray-100">
+    <section className="py-20 px-4 bg-slate-100">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="flex justify-center">

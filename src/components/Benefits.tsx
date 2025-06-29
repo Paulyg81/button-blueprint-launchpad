@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge, Clock, Heart, Star, User, Eye } from "lucide-react";
 
@@ -13,9 +12,9 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-white to-gray-100">
+    <section className="py-20 px-4 bg-gradient-to-br from-green-50 to-blue-50">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900">
           This Blueprint Will Help You…
         </h2>
         
@@ -23,10 +22,10 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-slate-200"
             >
               <benefit.icon className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-              <p className="text-lg font-semibold text-gray-800">{benefit.text}</p>
+              <p className="text-lg font-semibold text-slate-800">{benefit.text}</p>
             </div>
           ))}
         </div>

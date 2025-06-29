@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -39,9 +38,9 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-stone-50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-900">
           Frequently Asked Questions
         </h2>
         
@@ -50,12 +49,12 @@ const FAQ = () => {
             <AccordionItem 
               key={index} 
               value={`item-${index}`}
-              className="bg-gray-50 rounded-lg px-6 shadow-md border border-gray-200"
+              className="bg-white rounded-lg px-6 shadow-md border border-slate-200"
             >
-              <AccordionTrigger className="text-left font-semibold text-black hover:text-blue-600">
+              <AccordionTrigger className="text-left font-semibold text-slate-900 hover:text-blue-600">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-700 leading-relaxed">
+              <AccordionContent className="text-slate-700 leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

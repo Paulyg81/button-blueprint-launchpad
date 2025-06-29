@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
@@ -39,9 +38,9 @@ const CourseBreakdown = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-100">
+    <section className="py-20 px-4 bg-blue-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-black">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-900">
           What You'll Learn Over <span className="text-blue-600">20 Days</span>
         </h2>
         
@@ -49,13 +48,13 @@ const CourseBreakdown = () => {
           {keyDays.map((item, index) => (
             <div 
               key={index} 
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-slate-200"
             >
               <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <Check size={24} strokeWidth={3} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-black">{item.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+              <h3 className="text-xl font-bold mb-3 text-slate-900">{item.title}</h3>
+              <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>

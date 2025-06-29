@@ -1,4 +1,3 @@
-
 import { Check } from "lucide-react";
 
 const WhoItsFor = () => {
@@ -12,9 +11,9 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-100">
+    <section className="py-20 px-4 bg-green-50">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900">
           Is This For You?
         </h2>
         
@@ -22,12 +21,12 @@ const WhoItsFor = () => {
           {targetAudience.map((item, index) => (
             <div 
               key={index} 
-              className="flex items-center p-4 bg-gradient-to-r from-white to-gray-50 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-200"
+              className="flex items-center p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-slate-200"
             >
               <div className="bg-blue-600 rounded-full p-2 flex-shrink-0 mr-4">
                 <Check className="w-5 h-5 text-white" />
               </div>
-              <p className="text-gray-700 font-medium text-left">{item}</p>
+              <p className="text-slate-700 font-medium text-left">{item}</p>
             </div>
           ))}
         </div>

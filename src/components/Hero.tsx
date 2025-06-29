@@ -3,17 +3,17 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-gray-50 to-white">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-blue-50 via-white to-slate-50">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="text-center lg:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-black">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-slate-900">
             Reverse Your Biological Age in Just{" "}
             <span className="text-blue-600">20 Days</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-6 max-w-2xl">
+          <p className="text-lg md:text-xl text-slate-600 mb-6 max-w-2xl">
             (No Gym. No Guesswork.)
           </p>
-          <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">
+          <p className="text-lg md:text-xl text-slate-700 mb-8 max-w-2xl">
             A full-lifestyle, science-backed blueprint to look, move, and feel younger—without equipment, supplements, or complicated routines.
           </p>
           <Button 
