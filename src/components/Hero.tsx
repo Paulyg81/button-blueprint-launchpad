@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-blue-50 via-white to-slate-50">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-20" style={{ backgroundColor: '#FAF9F6' }}>
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-slate-900">

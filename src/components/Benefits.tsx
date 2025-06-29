@@ -12,7 +12,7 @@ const Benefits = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-green-50 to-blue-50">
+    <section className="py-20 px-4" style={{ backgroundColor: '#F9F5EF' }}>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900">
           This Blueprint Will Help You…

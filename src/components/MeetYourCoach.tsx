@@ -1,7 +1,7 @@
 
 const MeetYourCoach = () => {
   return (
-    <section className="py-20 px-4 bg-slate-100">
+    <section className="py-20 px-4" style={{ backgroundColor: '#FAF9F6' }}>
       <div className="max-w-5xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>

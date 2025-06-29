@@ -11,7 +11,7 @@ const WhoItsFor = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-green-50">
+    <section className="py-20 px-4" style={{ backgroundColor: '#EDF2F7' }}>
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-900">
           Is This For You?
